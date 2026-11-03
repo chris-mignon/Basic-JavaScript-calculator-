@@ -43,3 +43,19 @@ function remember() {
         screen.value = '';
 	}
 }
+
+// Function to convert the current value on the display screen to a percentage
+function toPercent() {
+    if (screen.value ) {
+        // Evaluate the current value on the display and divide it by 100 to convert it to a percentage
+       screen.value = eval(screen.value) / 100;
+    }
+}
+
+
+// Function to switch the sign of the current value on the display screen
+function switchSigns()
+{
+    // Multiply the current value on the display by -1 to switch its sign
+	screen.value = screen.value * -1;
+}

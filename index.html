@@ -22,8 +22,8 @@
 				</div>
 				<div id="inputs" class="keypad">
 					<input type="button" id="C" name="C" value="C" onclick="clearScreen()">
-					<input type="button" id="sign_switch" name="sign_switch" value="+/-">
-					<input type="button" id="percent" name="percent" value="%" >
+					<input type="button" id="sign_switch" name="sign_switch" value="+/-" onclick="switchSigns()">
+					<input type="button" id="percent" name="percent" value="%" onclick="toPercent()">
 					<input type="button" id="divide" name="divide" value="/" onclick="toScreen(this.value)">
 					<input type="button" id="7" name="7" value="7" onclick="toScreen(this.value)" >
 					<input type="button" id="8" name="8" value="8" onclick="toScreen(this.value)" >
@@ -39,8 +39,8 @@
 					<input type="button" id="add" name="add" value="+" onclick="toScreen(this.value)">
 					<input type="button" id="0" name="0" value="0" onclick="toScreen(this.value)">
 					<input type="button" id="." name="." value="." onclick="toScreen(this.value)">
-					<input type="button" id="Mem" name="Mem" value="M">
-					<input type="button" id="equals" name="equals" value="=" onclick="calculate()"> >
+					<input type="button" id="Mem" name="Mem" value="M" onclick="remember()">
+					<input type="button" id="equals" name="equals" value="=" onclick="calculate()"> 
 				</div>
 			</div>
 		</section>
